@@ -31,63 +31,51 @@ class WebpackTestConfig extends WebpackBaseConfig {
       module: {
         loaders: [
           {
-            test: /\.cssmodule\.css$/,
-            loaders: [
-              { loader: 'style-loader' },
-              {
-                loader: 'css-loader',
-                query: cssModulesQuery
-              }
-            ]
-          },
-          {
-            test: /\.cssmodule\.less$/,
+            test: /\.css$/,
             loaders: [
               { loader: 'style-loader' },
               {
                 loader: 'css-loader',
                 query: cssModulesQuery
               },
-              { loader: 'less-loader' }
+              { loader: 'postcss-loader' },
             ]
           },
           {
-            test: /\.cssmodule\.styl$/,
+            test: /\.(sass|scss)$/,
             loaders: [
               { loader: 'style-loader' },
               {
                 loader: 'css-loader',
                 query: cssModulesQuery
               },
-              { loader: 'stylus-loader' }
-            ]
-          },
-          {
-            test: /\.cssmodule\.(sass|scss)$/,
-            loaders: [
-              { loader: 'style-loader' },
-              {
-                loader: 'css-loader',
-                query: cssModulesQuery
-              },
+              { loader: 'postcss-loader' },
               { loader: 'sass-loader' }
             ]
           },
           {
-            test: /^.((?!cssmodule).)*\.css$/,
-            loader: 'null-loader'
+            test: /\.less$/,
+            loaders: [
+              { loader: 'style-loader' },
+              {
+                loader: 'css-loader',
+                query: cssModulesQuery
+              },
+              { loader: 'postcss-loader' },
+              { loader: 'less-loader' }
+            ]
           },
           {
-            test: /^.((?!cssmodule).)*\.(sass|scss)$/,
-            loader: 'null-loader'
-          },
-          {
-            test: /^.((?!cssmodule).)*\.less$/,
-            loader: 'null-loader'
-          },
-          {
-            test: /^.((?!cssmodule).)*\.styl$/,
-            loader: 'null-loader'
+            test: /\.styl$/,
+            loaders: [
+              { loader: 'style-loader' },
+              {
+                loader: 'css-loader',
+                query: cssModulesQuery
+              },
+              { loader: 'postcss-loader' },
+              { loader: 'stylus-loader' }
+            ]
           },
           {
             test: /\.(png|jpg|gif|mp4|ogg|svg|woff|woff2)$/,

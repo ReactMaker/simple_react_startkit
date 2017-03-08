@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import App from 'components/App';
+import appCss from 'components/app.css';
 
 describe('<App />', function () {
 
@@ -11,7 +12,7 @@ describe('<App />', function () {
   describe('when rendering the component', function () {
 
     it('should have a className of "index"', function () {
-      expect(this.component.hasClass('index')).to.equal(true);
+      expect(this.component.hasClass(appCss.index)).to.equal(true);
     });
   });
 });
