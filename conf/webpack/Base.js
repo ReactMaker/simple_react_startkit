@@ -53,7 +53,7 @@ class WebpackBaseConfig {
             query: { presets: ['es2015'] }
           },
           {
-            test: /\.(png|jpg|gif|mp4|ogg|svg|woff|woff2)$/,
+            test: /\.(png|jpg|gif|mp4|ogg|svg|woff|woff2|ttf|eot)$/,
             loader: 'file-loader'
           },
           {
@@ -128,7 +128,8 @@ class WebpackBaseConfig {
           images: `${this.srcPathAbsolute}/images/`,
           sources: `${this.srcPathAbsolute}/sources/`,
           stores: `${this.srcPathAbsolute}/stores/`,
-          styles: `${this.srcPathAbsolute}/styles/`
+          styles: `${this.srcPathAbsolute}/styles/`,
+          locale: `${this.srcPathAbsolute}/locale/`,
         },
         extensions: [
           '.js',
