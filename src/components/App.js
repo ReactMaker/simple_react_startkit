@@ -1,7 +1,7 @@
 import React from 'react';
 import { Loc } from 'redux-react-i18n';
 import appcss from 'styles/app.less';
-import { Button } from 'react-bootstrap';
+import { Button } from 'reactstrap';
 
 console.log(appcss)
 class AppComponent extends React.Component {
