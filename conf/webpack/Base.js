@@ -128,7 +128,7 @@ class WebpackBaseConfig {
           images: `${this.srcPathAbsolute}/images/`,
           sources: `${this.srcPathAbsolute}/sources/`,
           stores: `${this.srcPathAbsolute}/stores/`,
-          styles: `${this.srcPathAbsolute}/styles/`,
+          srcStyles: `${this.srcPathAbsolute}/srcStyles/`,
           locale: `${this.srcPathAbsolute}/locale/`,
         },
         extensions: [

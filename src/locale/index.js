@@ -1,6 +1,6 @@
 import { i18nActions } from 'redux-react-i18n';
 import enus from './en';
-import zhtw from './zhTw';
+import zhtw from './zhtw';
 import zhcn from './zhcn';
 
 // get default browser language
@@ -15,7 +15,7 @@ switch (browserLang) {
   default:
 }
 
-const dictionary = { enus, zhtw };
+const dictionary = { enus, zhtw, zhcn };
 const languages = [
   { code: 'enus', name: 'English' },
   { code: 'zhtw', name: '繁體中文'},

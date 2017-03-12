@@ -10,7 +10,7 @@
 /* Populated by react-webpack-redux:reducer */
 import { combineReducers } from 'redux';
 import { i18nReducer } from 'redux-react-i18n';
-import { routerReducer } from 'react-router-redux'
+import { routerReducer } from 'react-router-redux';
 
 const reducers = {
   i18n: i18nReducer,

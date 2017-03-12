@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import App from 'components/App';
-import appCss from 'components/app.css';
+import appCss from 'srcStyles/app.less';
 
 describe('<App />', function () {
 

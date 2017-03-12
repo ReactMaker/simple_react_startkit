@@ -1,9 +1,8 @@
 import React from 'react';
 import { Loc } from 'redux-react-i18n';
-import appcss from 'styles/app.less';
 import { Button } from 'reactstrap';
+import appcss from 'srcStyles/app.less';
 
-console.log(appcss)
 class AppComponent extends React.Component {
 
   render() {
@@ -12,7 +11,7 @@ class AppComponent extends React.Component {
         <div className={appcss.notice}>
           <Loc locKey="hello" />
           <p className={appcss.test}>ASDF</p>
-          <Button bsStyle="primary">Test</Button>
+          <Button>Test</Button>
           <span>11154654654645111111</span>
         </div>
       </div>
