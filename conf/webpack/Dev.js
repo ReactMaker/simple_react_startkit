@@ -13,6 +13,7 @@ class WebpackDevConfig extends WebpackBaseConfig {
     this.config = {
       devtool: 'cheap-module-source-map',
       entry: [
+        'babel-polyfill',
         'webpack-dev-server/client?http://0.0.0.0:8000/',
         'webpack/hot/only-dev-server',
         'react-hot-loader/patch',
