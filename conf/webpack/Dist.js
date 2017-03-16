@@ -13,7 +13,6 @@ class WebpackDistConfig extends WebpackBaseConfig {
     super();
     this.config = {
       cache: false,
-      devtool: 'source-map',
       entry: [
         './client.js'
       ],

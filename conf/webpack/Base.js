@@ -27,7 +27,7 @@ class WebpackBaseConfig {
   }
   get defaultSettings() {
     const cssModulesQuery = {
-      modules: true,
+      modules: false,
       importLoaders: 1,
       localIdentName: '[name]-[local]-[hash:base64:5]'
     };

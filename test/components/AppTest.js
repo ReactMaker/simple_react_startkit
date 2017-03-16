@@ -12,7 +12,7 @@ describe('<App />', function () {
   describe('when rendering the component', function () {
 
     it('should have a className of "index"', function () {
-      expect(this.component.hasClass(appCss.index)).to.equal(true);
+      expect(this.component.hasClass('index')).to.equal(true);
     });
   });
 });
