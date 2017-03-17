@@ -71,10 +71,14 @@
   },
   "dependencies": {
     "autoprefixer": "^6.7.6",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-polyfill": "^6.23.0",
+    "babel-preset-stage-0": "^6.22.0",
     "bootstrap": "^4.0.0-alpha.6",
+    "classnames": "^2.2.5",
     "cross-env": "^3.1.0",
     "eslint-plugin-import": "^2.2.0",
+    "key-mirror": "^1.0.1",
     "precss": "^1.4.0",
     "react": "^15.0.1",
     "react-addons-css-transition-group": "^15.4.2",
@@ -87,6 +91,7 @@
     "react-router-redux": "^4.0.8",
     "reactstrap": "^4.2.0",
     "redux": "^3.6.0",
+    "redux-actions": "^2.0.1",
     "redux-react-i18n": "^1.0.1",
     "redux-saga": "^0.14.3",
     "webpack": "^2.1.0-beta.6"

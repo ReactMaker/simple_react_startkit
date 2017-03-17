@@ -1,8 +1,8 @@
 import { createStore, applyMiddleware, compose } from 'redux';
-import reducers from '../reducers';
+import reducer from './reducer';
 
 import createSagaMiddleware, { END } from 'redux-saga';
-import sagaManager from '../sagaManager';
+import sagaManager from './sagaManager';
 
 function reduxStore(initialState) {
   const sagaMiddleware = createSagaMiddleware();
@@ -12,23 +12,23 @@ function reduxStore(initialState) {
 
   const enhancers = [applyMiddleware(...middleware)];
   const finalCreateStore = compose(...enhancers)(createStore);
-  const store = finalCreateStore(reducers, initialState,
+  const store = finalCreateStore(reducer, initialState,
     window.devToolsExtension && window.devToolsExtension());
 
   sagaManager.startSagas(sagaMiddleware);
 
   if (module.hot) {
     // Enable Webpack hot module replacement for reducers
-    module.hot.accept('../reducers', () => {
+    module.hot.accept('./reducer', () => {
       // We need to require for hot reloading to work properly.
-      const nextReducer = require('../reducers');  // eslint-disable-line global-require
+      const nextReducer = require('./reducer');  // eslint-disable-line global-require
 
       store.replaceReducer(nextReducer);
     });
 
-    module.hot.accept('../sagaManager', () => {
+    module.hot.accept('./sagaManager', () => {
 			sagaManager.cancelSagas(store);
-			require('../sagaManager').default.startSagas(sagaMiddleware);
+			require('./sagaManager').default.startSagas(sagaMiddleware);
 		});
   }
 
