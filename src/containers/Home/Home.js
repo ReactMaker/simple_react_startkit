@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Loc } from 'redux-react-i18n';
-import { Button } from 'reactstrap';
-import 'srcStyles/app.less';
+import { Button } from 'components';
+import './Home.less';
 
-class AppComponent extends React.Component {
+export default class Home extends Component {
+  constructor() {
+    super();
+  }
 
   render() {
     return (
@@ -11,15 +14,10 @@ class AppComponent extends React.Component {
         <div className="notice">
           <Loc locKey="hello" />
           <p className="test">ASDF</p>
-          <Button>Test</Button>
+          <Button color="success">Test</Button>
           <span>11154654654645111111</span>
         </div>
       </div>
     );
   }
 }
-
-AppComponent.defaultProps = {
-};
-
-export default AppComponent;

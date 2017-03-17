@@ -50,7 +50,7 @@ class WebpackBaseConfig {
             test: /\.js?$/,
             include: this.srcPathAbsolute,
             loader: 'babel-loader',
-            query: { presets: ['es2015'] }
+            query: { presets: ['es2015', 'stage-0'], "plugins": ['transform-decorators-legacy'] }
           },
           {
             test: /\.(png|jpg|gif|mp4|ogg|svg|woff|woff2|ttf|eot)$/,

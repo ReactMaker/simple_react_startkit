@@ -1,10 +1,12 @@
 {
   "presets": [
     ["es2015", { "modules": false }],
+    "stage-0",
     "react",
-    "airbnb"
+    "airbnb",
   ],
   "plugins": [
+    "transform-runtime",
     "transform-decorators-legacy",
     "transform-object-rest-spread",
     "react-hot-loader/babel"
