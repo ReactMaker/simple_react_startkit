@@ -9,7 +9,7 @@ import { AppContainer } from 'react-hot-loader';
 import initialLocale from './locale';
 import 'bootstrap/dist/css/bootstrap.css';
 
-import configureStore from './stores';
+import configureStore from './redux/store';
 import routes from './routes';
 
 const store = configureStore();

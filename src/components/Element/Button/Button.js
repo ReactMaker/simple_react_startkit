@@ -7,11 +7,12 @@ export default class Button extends Component {
   }
 
   render() {
-    const { children, color } = this.props;
+    const { children, color, ...props } = this.props;
 
     return (
       <BsButton
         color={color || 'secondary'}
+        {...props}
       >
         {children}
       </BsButton>
