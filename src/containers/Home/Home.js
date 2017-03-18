@@ -25,7 +25,7 @@ export default class Home extends Component {
   }
 
   render() {
-    const { counter, increment, decrement } = this.props;
+    const { counter, increment, decrement, delayIncrement, callApi } = this.props;
 
     return (
       <div className="index">
@@ -35,6 +35,8 @@ export default class Home extends Component {
           <p>{counter.num}</p>
           <Button color="success" onClick={() => increment(1)}>+1</Button>
           <Button color="success" onClick={() => decrement(1)}>-1</Button>
+          <Button color="danger" onClick={() => delayIncrement(5)}>delay +5</Button>
+          <Button color="warning" onClick={() => callApi()}>call api</Button>
         </div>
       </div>
     );
