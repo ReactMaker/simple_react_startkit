@@ -9,15 +9,16 @@ import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react';
 
 import { Provider } from 'react-redux';
+// import package
 import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
+// import webpack alias path
 import configureStore from 'redux_flow/store';
 import initialLocale from 'locale/';
-
-
+// import relative path
 import App from './App';
-import Home from './Home/Home';
-import NotFound from './NotFound/NotFound';
+import Home from './Home';
+import NotFound from './NotFound';
 
 const store = configureStore();
 const history = syncHistoryWithStore(browserHistory, store);
@@ -41,4 +42,3 @@ const Main = () => (
 );
 
 export default Main;
-

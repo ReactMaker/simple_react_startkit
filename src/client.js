@@ -13,8 +13,8 @@ ReactDOM.render(
 // migrate by this guide
 // https://github.com/gaearon/react-hot-loader/tree/master/docs#migration-to-30
 if (module.hot) {
-  module.hot.accept('containers', () => {
-    const NewMain = require('containers').default;
+  module.hot.accept('containers/', () => {
+    const NewMain = require('containers/').default;
     ReactDOM.render(
       <AppContainer>
         <NewMain />
