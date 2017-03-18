@@ -2,10 +2,9 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { Loc } from 'redux-react-i18n';
 import { push } from 'react-router-redux';
-
+import { Button } from 'components/';
+import { counterActions } from 'redux_flow/actions/';
 import './Home.less';
-import { Button } from 'components';
-import { counterActions } from '../../redux/actions';
 
 @connect(
   (state) => ({
@@ -32,7 +31,7 @@ export default class Home extends Component {
       <div className="index">
         <div className="notice">
           <Loc locKey="hello" />
-          <p className="test">ASDF</p>
+          <p className="test">ASe=aeeff44</p>
           <p>{counter.num}</p>
           <Button color="success" onClick={() => increment(1)}>+1</Button>
           <Button color="success" onClick={() => decrement(1)}>-1</Button>

@@ -3,7 +3,7 @@
     ["es2015", { "modules": false }],
     "stage-0",
     "react",
-    "airbnb",
+    "airbnb"
   ],
   "plugins": [
     "transform-runtime",

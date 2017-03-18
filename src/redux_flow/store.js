@@ -7,8 +7,8 @@ import sagaManager from './sagaManager';
 function reduxStore(initialState) {
   const sagaMiddleware = createSagaMiddleware();
   const middleware = [
-		sagaMiddleware
-	];
+    sagaMiddleware
+  ];
 
   const enhancers = [applyMiddleware(...middleware)];
   const finalCreateStore = compose(...enhancers)(createStore);
@@ -21,15 +21,14 @@ function reduxStore(initialState) {
     // Enable Webpack hot module replacement for reducers
     module.hot.accept('./reducer', () => {
       // We need to require for hot reloading to work properly.
-      const nextReducer = require('./reducer');  // eslint-disable-line global-require
-
+      const nextReducer = require('./reducer').default;  // eslint-disable-line global-require
       store.replaceReducer(nextReducer);
     });
 
     module.hot.accept('./sagaManager', () => {
-			sagaManager.cancelSagas(store);
-			require('./sagaManager').default.startSagas(sagaMiddleware);
-		});
+      sagaManager.cancelSagas(store);
+      require('./sagaManager').default.startSagas(sagaMiddleware);
+    });
   }
 
   store.runSaga = sagaMiddleware.run;
