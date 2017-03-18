@@ -8,7 +8,7 @@ const initialState = {
 export default handleActions({
   [types.INCREMENT]: (state, { payload }) => ({
     ...state,
-    num: state.num + (payload * 2),
+    num: state.num + payload,
   }),
   [types.DECREMENT]: (state, { payload }) => ({
     ...state,
