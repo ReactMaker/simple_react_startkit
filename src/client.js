@@ -1,28 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-
-import { syncHistoryWithStore } from 'react-router-redux';
-import { Router, Route, browserHistory } from 'react-router';
-
 import { AppContainer } from 'react-hot-loader';
-import initialLocale from './locale';
-import 'bootstrap/dist/css/bootstrap.css';
-
-import configureStore from './redux/store';
-import routes from './routes';
-
-const store = configureStore();
-const history = syncHistoryWithStore(browserHistory, store);
-initialLocale(store);
+import Main from 'containers/';
 
 ReactDOM.render(
   <AppContainer>
-    <Provider store={store}>
-      <Router history={history}>
-        {routes}
-      </Router>
-    </Provider>
+    <Main />
   </AppContainer>,
   document.getElementById('app')
 );
+
+// migrate by this guide
+// https://github.com/gaearon/react-hot-loader/tree/master/docs#migration-to-30
+if (module.hot) {
+  module.hot.accept('containers/', () => {
+    const NewMain = require('containers/').default;
+    ReactDOM.render(
+      <AppContainer>
+        <NewMain />
+      </AppContainer>,
+      document.getElementById('app')
+    );
+  });
+}

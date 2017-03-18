@@ -18,15 +18,18 @@
     "no-underscore-dangle": [ "error", { "allowAfterThis": true }],
     "import/no-unresolved": ["error", {
         "ignore": [
-          "config",
           "components/",
-          "stores/",
-          "actions/",
-          "sources/",
-          "srcStyles/",
-          "images/"
+          "config/",
+          "containers/",
+          "locale",
+          "redux_flow/",
+          "static/",
+          "theme/",
+          "utils/"
         ]
     }],
-    "import/no-extraneous-dependencies": ["off"]
+    "import/no-extraneous-dependencies": ["off"],
+    "import/extensions": "off",
+    "global-require": "off"
   }
 }
