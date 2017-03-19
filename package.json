@@ -80,12 +80,14 @@
     "cross-env": "^3.1.0",
     "eslint-plugin-import": "^2.2.0",
     "key-mirror": "^1.0.1",
+    "normalizr": "^3.2.2",
     "precss": "^1.4.0",
     "react": "^15.0.1",
     "react-addons-css-transition-group": "^15.4.2",
     "react-addons-transition-group": "^15.4.2",
     "react-css-modules": "^3.7.10",
     "react-dom": "^15.0.1",
+    "react-helmet": "^4.0.0",
     "react-hot-loader": "^3.0.0-beta.6",
     "react-redux": "^5.0.3",
     "react-router": "^3.0.2",
@@ -95,6 +97,7 @@
     "redux-actions": "^2.0.1",
     "redux-react-i18n": "^1.0.1",
     "redux-saga": "^0.14.3",
+    "video.js": "^5.18.4",
     "webpack": "^2.1.0-beta.6"
   }
 }
