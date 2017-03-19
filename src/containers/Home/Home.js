@@ -4,7 +4,7 @@ import { Loc } from 'redux-react-i18n';
 import { push } from 'react-router-redux';
 import './Home.less';
 
-import Counter from './Counter/Counter';
+import Counter from './Counter';
 
 @connect(
   () => ({}),

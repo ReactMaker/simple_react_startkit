@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { Button } from 'components/';
 import { counterActions } from 'redux_flow/actions/';
-import Show from '../components/Show/Show';
+import Show from '../components/Show';
 
 @connect(
   (state) => ({
