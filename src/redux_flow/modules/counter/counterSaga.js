@@ -11,7 +11,7 @@ function* watchIncrement() {
   }
 }
 
-import { testApi } from '../../../services/api/api';
+import { testApi } from 'services/api';
 
 function* watchCallApi() {
   while (true) {
