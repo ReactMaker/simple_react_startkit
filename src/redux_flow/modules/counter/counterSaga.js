@@ -24,4 +24,4 @@ function* watchCallApi() {
 export default [
   fork(watchIncrement),
   fork(watchCallApi),
-]
+];

@@ -6,4 +6,4 @@ export default {
   decrement: createAction(types.DECREMENT),
   delayIncrement: createAction(types.DELAY_INCREMENT),
   callApi: createAction(types.CALL_API),
-}
+};
