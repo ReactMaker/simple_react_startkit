@@ -21,12 +21,12 @@ class WebpackDevConfig extends WebpackBaseConfig {
       ],
       plugins: [
         new webpack.HotModuleReplacementPlugin(),
-        //new webpack.NoErrorsPlugin()
-        new webpack.DefinePlugin({
-          'process.env.NODE_ENV': '"development"',
-          'process.env.APIHOST': '"localhost"',
-          'process.env.APIPORT': '"8080"',
-        })
+        //new webpack.NoErrorsPlugin(),
+        new webpack.EnvironmentPlugin({
+          NODE_ENV: 'development',
+          APIHOST: 'localhost',
+          APIPORT: '8080'
+        }),
       ]
     };
   }
