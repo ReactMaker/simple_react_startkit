@@ -17,6 +17,6 @@ export default class Show extends Component {
       <div>
         <p className="num">{num}</p>
       </div>
-    )
+    );
   }
 }

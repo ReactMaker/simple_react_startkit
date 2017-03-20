@@ -5,7 +5,7 @@ import { counterActions } from 'redux_flow/actions/';
 import Show from '../components/Show';
 
 @connect(
-  (state) => ({
+  state => ({
     counter: state.counter,
   }), {
     ...counterActions,
@@ -36,6 +36,6 @@ export default class Counter extends Component {
         <Button color="danger" onClick={() => delayIncrement(5)}>delay +5</Button>
         <Button color="warning" onClick={() => callApi()}>call api</Button>
       </div>
-    )
+    );
   }
 }
