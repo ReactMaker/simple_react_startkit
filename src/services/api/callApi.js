@@ -1,6 +1,6 @@
 import 'isomorphic-fetch';
 import { normalize } from 'normalizr';
-import { mapUrl } from '../utils/url';
+import mapUrl from '../utils/url';
 
 // deal with params, because not all property named 'data'...
 async function getPostJsonData(params) {
@@ -8,6 +8,8 @@ async function getPostJsonData(params) {
     if (params[item]) {
       return item;
     }
+
+    return null;
   });
 
   if (!itemType) return null;
@@ -25,24 +27,24 @@ async function callApi(endpoint, params = {}, method) {
     headers: {
       'Content-Type': 'application/json',
       Accept: 'application/json',
-			// 'X-Access-Token': accessToken
+      // 'X-Access-Token': accessToken
     },
     body: postJson,
     method
   })
-		.then(response => response.json().then(json => ({json, response})))
-		.then(({json, response}) => {
-  if (!response.ok) {
-    return Promise.reject(json);
-  }
+    .then(response => response.json().then(json => ({json, response})))
+    .then(({json, response}) => {
+      if (!response.ok) {
+        return Promise.reject(json);
+      }
 
-  return Object.assign({}, params.schema
-				? normalize(json.data, params.schema)
-				: json);
-})
-		.then(response => ({response}), error => ({
-  error: error.message || 'Something bad happened.'
-}));
+      return Object.assign({}, params.schema
+        ? normalize(json.data, params.schema)
+        : json);
+    })
+    .then(response => ({response}), error => ({
+      error: error.message || 'Something bad happened.'
+    }));
 }
 
 export default {

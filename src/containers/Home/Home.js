@@ -15,10 +15,6 @@ export default class Home extends Component {
     pushState: PropTypes.func,
   }
 
-  constructor() {
-    super();
-  }
-
   render() {
     return (
       <div className="index">

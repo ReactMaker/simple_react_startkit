@@ -6,10 +6,6 @@ export default class Show extends Component {
     num: PropTypes.number,
   }
 
-  constructor() {
-    super();
-  }
-
   render() {
     const { num } = this.props;
 

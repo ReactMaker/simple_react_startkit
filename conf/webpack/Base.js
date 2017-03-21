@@ -40,7 +40,11 @@ class WebpackBaseConfig {
         historyApiFallback: true,
         hot: true,
         inline: true,
-        port: 8000
+        port: 8000,
+        overlay: {
+          errors: true,
+          warnings: false,
+        },
       },
       entry: './index.js',
       module: {
@@ -49,8 +53,18 @@ class WebpackBaseConfig {
             enforce: 'pre',
             test: /\.js?$/,
             include: this.srcPathAbsolute,
-            loader: 'babel-loader',
-            query: { presets: ['es2015', 'stage-0'], "plugins": ['transform-decorators-legacy'] }
+            use: [
+              {
+                loader: 'babel-loader',
+                query: { presets: ['es2015', 'stage-0'], "plugins": ['transform-decorators-legacy'] }
+              }, {
+                loader: 'eslint-loader',
+                options: {
+                  failOnWarning: false,
+                  failOnError: false,
+                }
+              }
+            ]
           },
           {
             test: /\.(png|jpg|gif|mp4|ogg|svg|woff|woff2|ttf|eot)$/,
