@@ -76,6 +76,7 @@
     "bootstrap": "^4.0.0-alpha.6",
     "classnames": "^2.2.5",
     "cross-env": "^3.1.0",
+    "eslint-loader": "^1.6.3",
     "eslint-plugin-import": "^2.2.0",
     "key-mirror": "^1.0.1",
     "normalizr": "^3.2.2",

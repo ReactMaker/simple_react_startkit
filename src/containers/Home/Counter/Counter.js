@@ -13,14 +13,11 @@ import Show from '../components/Show';
 )
 export default class Counter extends Component {
   static propTypes = {
+    counter: PropTypes.shape({}),
     increment: PropTypes.func,
     decrement: PropTypes.func,
     delayIncrement: PropTypes.func,
     callApi: PropTypes.func,
-  }
-
-  constructor() {
-    super();
   }
 
   render() {

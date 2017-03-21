@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import BsButton from 'reactstrap/lib/Button';
 
 export default class Button extends Component {
-  constructor() {
-    super();
+  static propTypes = {
+    children: PropTypes.shape({}),
+    color: PropTypes.string,
   }
 
   render() {

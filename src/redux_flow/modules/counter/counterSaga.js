@@ -1,5 +1,7 @@
 import { fork, take, put, call } from 'redux-saga/effects';
 import { delay } from 'redux-saga';
+
+import { testApi } from '../../../services/api';
 import types from './counterConstant';
 import counterAction from './counterAction';
 
@@ -10,8 +12,6 @@ function* watchIncrement() {
     yield put(counterAction.increment(payload));
   }
 }
-
-import { testApi } from 'services/api';
 
 function* watchCallApi() {
   while (true) {
