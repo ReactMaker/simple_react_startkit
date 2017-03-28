@@ -78,7 +78,7 @@
     "cross-env": "^3.1.0",
     "eslint-loader": "^1.6.3",
     "eslint-plugin-import": "^2.2.0",
-    "key-mirror": "^1.0.1",
+    "key-mirror": "^1.1.0",
     "normalizr": "^3.2.2",
     "precss": "^1.4.0",
     "react": "^15.0.1",
@@ -94,7 +94,7 @@
     "reactstrap": "^4.2.0",
     "redux": "^3.6.0",
     "redux-actions": "^2.0.1",
-    "redux-react-i18n": "^1.0.1",
+    "redux-react-i18n": "^1.1.0",
     "redux-saga": "^0.14.3",
     "video.js": "^5.18.4",
     "webpack": "^2.1.0-beta.6"

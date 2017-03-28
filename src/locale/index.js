@@ -25,7 +25,7 @@ const languages = [
 const initialLocal = (store) => {
   store.dispatch(i18nActions.setDictionaries(dictionary));
   store.dispatch(i18nActions.setLanguages(languages));
-  store.dispatch(i18nActions.setCurrent(userLang));
+  store.dispatch(i18nActions.setCurrentLanguage(userLang));
 };
 
 export default initialLocal;
