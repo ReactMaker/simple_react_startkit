@@ -78,7 +78,7 @@
     "cross-env": "^3.1.0",
     "eslint-loader": "^1.6.3",
     "eslint-plugin-import": "^2.2.0",
-    "key-mirror": "^1.1.0",
+    "key-mirror": "^1.0.1",
     "normalizr": "^3.2.2",
     "precss": "^1.4.0",
     "react": "^15.0.1",
