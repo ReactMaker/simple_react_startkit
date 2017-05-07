@@ -5,6 +5,7 @@
  * final output when running npm run dist.
  */
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackBaseConfig = require('./Base');
 
 class WebpackDistConfig extends WebpackBaseConfig {
@@ -21,12 +22,16 @@ class WebpackDistConfig extends WebpackBaseConfig {
           NODE_ENV: 'production'
         }),
         new webpack.optimize.AggressiveMergingPlugin(),
+        new HtmlWebpackPlugin({
+          template: 'index.html',
+          filename: '../index.html',
+        }),
         //new webpack.NoErrorsPlugin()
       ]
     };
 
     // Deactivate hot-reloading if we run dist build on the dev server
-    this.config.devServer.hot = false;
+    // this.config.devServer.hot = false;
   }
 
   /**

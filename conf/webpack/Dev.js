@@ -4,6 +4,7 @@
  * Default dev server configuration.
  */
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackBaseConfig = require('./Base');
 
 class WebpackDevConfig extends WebpackBaseConfig {
@@ -19,16 +20,25 @@ class WebpackDevConfig extends WebpackBaseConfig {
         'react-hot-loader/patch',
         './client.js'
       ],
+      devServer: {
+        publicPath: '/',
+        historyApiFallback: true,
+        hot: true,
+        inline: true,
+        port: 8000,
+        overlay: {
+          errors: true,
+          warnings: false,
+        },
+      },
       plugins: [
         new webpack.HotModuleReplacementPlugin(),
-        //new webpack.NoErrorsPlugin(),
-        new webpack.EnvironmentPlugin({
-          NODE_ENV: 'development',
-          APIHOST: 'localhost',
-          APIPORT: '8080'
+        new HtmlWebpackPlugin({
+          template: 'index.html',
         }),
       ]
     };
+    this.config.output.publicPath = './';
   }
 }
 

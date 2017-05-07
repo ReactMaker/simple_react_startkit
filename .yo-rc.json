@@ -1,9 +1,0 @@
-{
-  "generator-react-webpack": {
-    "appName": "test-react-redux",
-    "style": "less",
-    "cssmodules": true,
-    "postcss": true,
-    "generatedWithVersion": 4
-  }
-}

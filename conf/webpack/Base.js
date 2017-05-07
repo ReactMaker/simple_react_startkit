@@ -34,18 +34,6 @@ class WebpackBaseConfig {
     return {
       context: this.srcPathAbsolute,
       devtool: 'eval',
-      devServer: {
-        contentBase: './src/',
-        publicPath: '/assets/',
-        historyApiFallback: true,
-        hot: true,
-        inline: true,
-        port: 8000,
-        overlay: {
-          errors: true,
-          warnings: false,
-        },
-      },
       entry: './index.js',
       module: {
         rules: [
@@ -130,8 +118,8 @@ class WebpackBaseConfig {
       },
       output: {
         path: path.resolve('./dist/assets'),
-        filename: 'app.js',
-        publicPath: './assets/'
+        filename: 'output.[hash].bundle.js',
+        publicPath: 'assets/'
       },
       plugins: [],
       resolve: {
