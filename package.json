@@ -40,7 +40,9 @@
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.1.0-beta"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "rimraf": "^2.6.1"
+  },
   "keywords": [],
   "main": "src/index.js",
   "private": true,
