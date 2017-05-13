@@ -49,13 +49,9 @@
   "repository": "",
   "scripts": {
     "clean": "rimraf dist/*",
-    "dist": "webpack --progress --bail --env dist -p",
+    "dist": "npm run clean && webpack --progress --bail --env dist -p",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
-    "serve:dev": "webpack-dev-server --open --env dev",
-    "serve:dist": "webpack-dev-server --open --env dist -p --progress",
-    "start": "npm run serve:dev",
-    "test": "cross-env NODE_ENV=test karma start",
-    "test:watch": "cross-env NODE_ENV=test karma start --autoWatch=true --singleRun=false --reporters=mocha,coverage"
+    "start": "webpack-dev-server --open --env dev"
   }
 }

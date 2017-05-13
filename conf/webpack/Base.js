@@ -125,13 +125,9 @@ class WebpackBaseConfig {
       resolve: {
         alias: {
           components: `${this.srcPathAbsolute}/components/`,
-          config: `${this.srcPathAbsolute}/config/${this.env}.js`,
           containers: `${this.srcPathAbsolute}/containers/`,
-          locale: `${this.srcPathAbsolute}/locale/`,
-          redux_flow: `${this.srcPathAbsolute}/redux_flow/`,
           static: `${this.srcPathAbsolute}/static/`,
           theme: `${this.srcPathAbsolute}/theme/`,
-          utils: `${this.srcPathAbsolute}/utils/`,
         },
         extensions: [
           '.js',
