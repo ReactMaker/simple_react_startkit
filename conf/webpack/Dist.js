@@ -21,10 +21,26 @@ class WebpackDistConfig extends WebpackBaseConfig {
         new webpack.EnvironmentPlugin({
           NODE_ENV: 'production'
         }),
+        new webpack.LoaderOptionsPlugin({
+          minimize: true,
+          debug: false
+        }),
         new webpack.optimize.AggressiveMergingPlugin(),
         new HtmlWebpackPlugin({
           template: 'index.html',
           filename: '../index.html',
+          minify: {
+            removeComments: true,
+            collapseWhitespace: true,
+            removeRedundantAttributes: true,
+            useShortDoctype: true,
+            removeEmptyAttributes: true,
+            removeStyleLinkTypeAttributes: true,
+            keepClosingSlash: true,
+            minifyJS: true,
+            minifyCSS: true,
+            minifyURLs: true,
+          },
         }),
         //new webpack.NoErrorsPlugin()
       ]
