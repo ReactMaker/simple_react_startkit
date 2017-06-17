@@ -41,10 +41,10 @@ class WebpackBaseConfig {
             enforce: 'pre',
             test: /\.js?$/,
             include: this.srcPathAbsolute,
+            exclude: /(node_modules|bower_components)/,
             use: [
               {
                 loader: 'babel-loader',
-                query: { presets: ['es2015', 'stage-0'], "plugins": ['transform-decorators-legacy'] }
               }, {
                 loader: 'eslint-loader',
                 options: {
