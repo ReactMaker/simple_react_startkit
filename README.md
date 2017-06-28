@@ -38,4 +38,3 @@ $ npm start                     # Compile and launch
 | `lint`             | 檢查所有的 js 檔案有沒有符合 coding style                                    |
 | `lint:fix`         | 檢查所有的 js 檔案有沒有符合 coding style ，如果是一些簡單的錯誤就會嘗試修復 |
 
-# TEST_DEPLOY
