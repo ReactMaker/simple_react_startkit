@@ -54,6 +54,6 @@
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
     "start": "webpack-dev-server --open --env dev",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run dist && gh-pages -d dist"
   }
 }
