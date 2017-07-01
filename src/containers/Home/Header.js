@@ -5,7 +5,9 @@ export default class Header extends Component {
   render() {
     return (
       <div className="header">
-        <img alt="logoHeader" src={logo} />
+        <a href="https://facebook.com/reactmaker">
+          <img alt="logoHeader" src={logo} />
+        </a>
       </div>
     );
   }
