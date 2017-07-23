@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Header from './Header.js';
-import Content from './Content.js';
+import Header from './components/Header.js';
+import Content from './components/Content.js';
 import './Home.less';
 
 export default class Home extends Component {

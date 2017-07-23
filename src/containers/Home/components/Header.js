@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.png';
-import github from './github.png';
-import facebook from './facebook.png';
+import logo from 'static/images/logo.png';
+import github from 'static/images/github.png';
+import facebook from 'static/images/facebook.png';
 
 export default class Header extends Component {
   render() {
