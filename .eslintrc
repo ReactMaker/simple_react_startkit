@@ -17,6 +17,7 @@
     "no-useless-escape": 0,
     "react/no-find-dom-node": 0,
     "no-param-reassign": 0,
+    "max-len": 0,
     "comma-dangle": ["off"],
     "no-unused-vars": ["warn"],
     "object-curly-spacing": ["off"],
