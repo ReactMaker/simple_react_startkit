@@ -1,16 +1,16 @@
 import React from 'react';
 // import package
-import { Router, Route, hashHistory } from 'react-router';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // import relative path
 import Home from './Home';
 import NotFound from './NotFound';
 
-// add router key to fix this issue
-// https://github.com/reactjs/react-router-redux/issues/179#issuecomment-275576250
 const Main = () => (
-  <Router key={Math.random()} history={hashHistory}>
-    <Route path="/" component={Home} />
-    <Route path="*" component={NotFound} />
+  <Router>
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <Route component={NotFound} />
+    </Switch>
   </Router>
 );
 
