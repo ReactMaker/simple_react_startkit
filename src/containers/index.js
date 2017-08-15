@@ -1,6 +1,6 @@
 import React from 'react';
 // import package
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 // import relative path
 import Home from './Home';
 import NotFound from './NotFound';
