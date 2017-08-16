@@ -5,7 +5,7 @@
 ## 特色
 
 * [react](https://github.com/facebook/react)
-* [react-router 3](https://github.com/rackt/react-router)
+* [react-router 4](https://reacttraining.com/react-router/web/example/basic)
 * [webpack 2](https://github.com/webpack/webpack)
 * [babel stage-0 ](https://github.com/babel/babel)
 * [eslint](http://eslint.org)
