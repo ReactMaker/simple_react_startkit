@@ -39,3 +39,26 @@ $ npm start                     # Compile and launch
 | `lint:fix`         | 檢查所有的 js 檔案有沒有符合 coding style ，如果是一些簡單的錯誤就會嘗試修復 |
 | `deploy`           | 編譯整個網站成品後，上傳至Github靜態頁面，https://[Github 帳號].github.io/[Repositories Name]/#/ |
 
+
+## Docker
+
+
+如果想要把專案 build 到 docker 上面跑，請執行這條命令
+```
+npm run build:docker
+```
+輸入完命令之後會建立 docker image 名稱為 `reactdocker`
+
+![](https://i.imgur.com/LISz99c.png)
+
+我們可以透過以下指令把映像檔跑起來
+
+```
+docker run --name reactmaker -d -P reactdocker
+```
+
+因為我是用`-P`參數自動分配port，所以跑起來之後輸入 `docker ps` 察看系統給我哪個 port
+
+![](https://i.imgur.com/Fww1ncw.png)
+
+接著就可以在瀏覽器輸入localhost:32768看到我們包好的網頁了
