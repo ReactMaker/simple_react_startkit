@@ -57,6 +57,7 @@
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
     "start": "webpack-dev-server --open --env dev",
-    "deploy": "npm run dist && gh-pages -d dist"
+    "deploy": "npm run dist && gh-pages -d dist",
+    "build:docker": "npm run dist && docker build -t reactdocker ."
   }
 }
