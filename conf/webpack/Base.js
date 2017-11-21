@@ -45,13 +45,14 @@ class WebpackBaseConfig {
             use: [
               {
                 loader: 'babel-loader',
-              }, {
-                loader: 'eslint-loader',
-                options: {
-                  failOnWarning: false,
-                  failOnError: false,
-                }
               }
+              // , {
+              //   loader: 'eslint-loader',
+              //   options: {
+              //     failOnWarning: false,
+              //     failOnError: false,
+              //   }
+              // }
             ]
           },
           {
