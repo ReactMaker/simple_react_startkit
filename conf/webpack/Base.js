@@ -26,11 +26,6 @@ class WebpackBaseConfig {
     return path.resolve('./test');
   }
   get defaultSettings() {
-    const cssModulesQuery = {
-      modules: false,
-      importLoaders: 1,
-      localIdentName: '[name]-[local]-[hash:base64:5]'
-    };
     return {
       context: this.srcPathAbsolute,
       devtool: 'eval',
@@ -72,10 +67,7 @@ class WebpackBaseConfig {
             test: /\.(sass|scss)$/,
             loaders: [
               { loader: 'style-loader' },
-              {
-                loader: 'css-loader',
-                query: cssModulesQuery
-              },
+              { loader: 'css-loader' },
               { loader: 'postcss-loader' },
               { loader: 'sass-loader' }
             ]
@@ -84,10 +76,7 @@ class WebpackBaseConfig {
             test: /\.css$/,
             loaders: [
               { loader: 'style-loader' },
-              {
-                loader: 'css-loader',
-                query: cssModulesQuery
-              },
+              { loader: 'css-loader' },
               { loader: 'postcss-loader' },
             ]
           },
@@ -95,10 +84,7 @@ class WebpackBaseConfig {
             test: /\.less$/,
             loaders: [
               { loader: 'style-loader' },
-              {
-                loader: 'css-loader',
-                query: cssModulesQuery
-              },
+              { loader: 'css-loader' },
               { loader: 'postcss-loader' },
               { loader: 'less-loader' }
             ]
@@ -107,10 +93,7 @@ class WebpackBaseConfig {
             test: /\.styl$/,
             loaders: [
               { loader: 'style-loader' },
-              {
-                loader: 'css-loader',
-                query: cssModulesQuery
-              },
+              { loader: 'css-loader' },
               { loader: 'postcss-loader' },
               { loader: 'stylus-loader' }
             ]
