@@ -1,9 +1,8 @@
 {
   "presets": [
-    ["es2015", { "modules": false }],
-    "stage-0",
-    "react",
-    "airbnb"
+    "env",
+    "react",    
+    "stage-0"
   ],
   "plugins": [
     "transform-runtime",
@@ -11,14 +10,5 @@
     "transform-class-properties",
     "transform-object-rest-spread",
     "react-hot-loader/babel"
-  ],
-  "env": {
-    "test": {
-      "plugins": [
-        "transform-decorators-legacy",
-        "transform-object-rest-spread",
-        "istanbul"
-      ]
-    }
-  }
+  ]
 }
