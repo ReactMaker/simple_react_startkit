@@ -5,6 +5,9 @@
     "node": true,
     "mocha": true
   },
+  "globals": {
+    "ENV": false
+  },
   "extends": "airbnb",
   "rules": {
     "linebreak-style": 0,
@@ -21,16 +24,45 @@
     "react/sort-comp": 0,
     "indent": 0,
     "quotes": 0,
-    "comma-dangle": ["off"],
-    "no-unused-vars": ["warn"],
-    "object-curly-spacing": ["off"],
-    "padded-blocks": ["off"],
-    "react/jsx-closing-bracket-location": ["off"],
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    "react/jsx-space-before-closing": ["off"],
-    "react/prefer-stateless-function": ["off"],
-    "no-underscore-dangle": [ "error", { "allowAfterThis": true }],
-    "import/no-unresolved": ["error", {
+    "comma-dangle": [
+      "off"
+    ],
+    "no-unused-vars": [
+      "warn"
+    ],
+    "object-curly-spacing": [
+      "off"
+    ],
+    "padded-blocks": [
+      "off"
+    ],
+    "react/jsx-closing-bracket-location": [
+      "off"
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "react/jsx-space-before-closing": [
+      "off"
+    ],
+    "react/prefer-stateless-function": [
+      "off"
+    ],
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allowAfterThis": true
+      }
+    ],
+    "import/no-unresolved": [
+      "error",
+      {
         "ignore": [
           "components/",
           "config/",
@@ -41,8 +73,11 @@
           "theme/",
           "utils/"
         ]
-    }],
-    "import/no-extraneous-dependencies": ["off"],
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "off"
+    ],
     "import/extensions": "off",
     "global-require": "off"
   }
