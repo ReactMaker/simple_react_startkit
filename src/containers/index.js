@@ -9,7 +9,7 @@ import NotFound from './NotFound';
 const LoadComponent = loader => Loadable({
   loader,
   loading: Loading,
-})
+});
 
 const Home = LoadComponent(() => import('./Home'));
 

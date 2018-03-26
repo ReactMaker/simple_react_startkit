@@ -47,6 +47,11 @@ module.exports = {
       path.resolve(__dirname, 'node_modules/'),
     ]
   },
+  optimization: {
+    splitChunks: {
+      chunks: 'all'
+    }
+  },
   plugins: [
     new HtmlWebPackPlugin({
       template: path.resolve(__dirname, 'src/index.html'),
