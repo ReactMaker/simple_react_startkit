@@ -57,5 +57,8 @@ module.exports = {
       template: path.resolve(__dirname, 'src/index.html'),
       filename: "./index.html"
     })
-  ]
+  ],
+  devServer: {
+    compress: true,
+  },
 };
