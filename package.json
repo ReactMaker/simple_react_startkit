@@ -5,8 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "clean": "rimraf dist/*",
-    "start": "webpack-dev-server --mode development --open --hot --config webpack.config.dev.js",
-    "dist": "npm run clean && webpack --mode production --config webpack.config.prod.js",
+    "start": "webpack-dev-server --mode development --open --hot --config webpack.config.js",
+    "dist": "npm run clean && webpack --mode production --config webpack.config.js",
     "deploy": "npm run dist && gh-pages -d dist",
     "build:docker": "npm run dist && docker build -t reactdocker .",
     "lint": "eslint ./src",
