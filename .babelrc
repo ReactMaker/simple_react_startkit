@@ -9,7 +9,6 @@
     "transform-decorators-legacy",
     "transform-class-properties",
     "transform-object-rest-spread",
-    "react-hot-loader/babel",
-    "emotion"
+    "react-hot-loader/babel"
   ]
 }
