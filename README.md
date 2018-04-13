@@ -4,8 +4,7 @@
 
 ## 特色
 
-* [react 16](https://github.com/facebook/react)
-* [react-router 4](https://reacttraining.com/react-router/web/example/basic)
+* [react 16.3.1](https://github.com/facebook/react)
 * [webpack 4](https://github.com/webpack/webpack)
 * [babel 6](https://github.com/babel/babel)
 * [eslint](http://eslint.org)

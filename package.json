@@ -17,8 +17,8 @@
   "license": "ISC",
   "private": true,
   "dependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1"
   },
   "devDependencies": {
     "autoprefixer": "^8.1.0",
