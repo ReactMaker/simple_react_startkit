@@ -17,8 +17,8 @@
   "license": "ISC",
   "private": true,
   "dependencies": {
-    "react": "^16.4.0",
-    "react-dom": "^16.4.0"
+    "react": "16.4.0",
+    "react-dom": "16.4.0"
   },
   "devDependencies": {
     "autoprefixer": "8.6.4",
@@ -47,9 +47,9 @@
     "postcss-loader": "2.1.5",
     "react-hot-loader": "4.3.3",
     "rimraf": "2.6.2",
-    "sass-loader": "7.0.1",
+    "sass-loader": "7.0.3",
     "style-loader": "0.21.0",
-    "webpack": "4.10.1",
+    "webpack": "4.14.0",
     "webpack-cli": "2.1.4",
     "webpack-dev-server": "3.1.4"
   }
