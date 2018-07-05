@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/ReactMaker/simple_react_start_kit.svg?branch=master)](https://travis-ci.com/ReactMaker/simple_react_start_kit)
+
 # Simple React Start Kit 2017
 
 這個環境包可以讓你快速體驗 ReactJS 開發環境的便利，我們並沒有在裏面放入額外的套件(例如 redux, karma)，希望可以讓你用最簡單的環境開始學習 React
