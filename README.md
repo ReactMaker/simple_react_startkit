@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/ReactMaker/simple_react_start_kit.svg?branch=master)](https://travis-ci.com/ReactMaker/simple_react_start_kit)
+[![Build Status](https://travis-ci.org/ReactMaker/simple_react_startkit.svg?branch=master)](https://travis-ci.org/ReactMaker/simple_react_startkit)
 
 # Simple React Start Kit 2017
 
