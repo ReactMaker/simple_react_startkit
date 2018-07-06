@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/ReactMaker/simple_react_startkit.svg?branch=master)](https://travis-ci.org/ReactMaker/simple_react_startkit)
+[![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com/)
 
 # Simple React Start Kit 2017
 
