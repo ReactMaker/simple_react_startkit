@@ -44,7 +44,7 @@
     "less": "3.6.0",
     "less-loader": "4.1.0",
     "node-sass": "github:chnbohwr/node-sass",
-    "postcss-loader": "2.1.5",
+    "postcss-loader": "2.1.6",
     "react-hot-loader": "4.3.3",
     "rimraf": "2.6.2",
     "sass-loader": "7.0.3",
