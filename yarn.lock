@@ -3668,9 +3668,9 @@ less-loader@4.1.0:
     loader-utils "^1.1.0"
     pify "^3.0.0"
 
-less@3.6.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/less/-/less-3.6.0.tgz#6a079e954256a3bebf33ab00d25fa39409005701"
+less@3.7.0:
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/less/-/less-3.7.0.tgz#dc0429b4595a14a4cf7e7efd33f7378fe3edb614"
   optionalDependencies:
     errno "^0.1.1"
     graceful-fs "^4.1.2"
