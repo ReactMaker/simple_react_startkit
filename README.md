@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/ReactMaker/simple_react_startkit.svg?branch=master)](https://travis-ci.org/ReactMaker/simple_react_startkit)
 [![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com/)
 [![david-dm](https://david-dm.org/reactmaker/simple_react_startkit.svg)](https://david-dm.org/)
+[![Known Vulnerabilities](https://snyk.io/test/github/ReactMaker/simple_react_startkit/badge.svg?targetFile=package.json)](https://snyk.io/test/github/ReactMaker/simple_react_startkit?targetFile=package.json)
 
 # Simple React Start Kit 2017
 
