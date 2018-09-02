@@ -1,7 +1,7 @@
 {
   "name": "simple_react_start_kit_2017",
   "description": "react webpack2 react-router example",
-  "version": "1.2.1",
+  "version": "2.0.0",
   "main": "src/index.js",
   "scripts": {
     "clean": "rimraf dist/*",

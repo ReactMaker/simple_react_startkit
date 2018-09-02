@@ -3,15 +3,15 @@
 [![david-dm](https://david-dm.org/reactmaker/simple_react_startkit.svg)](https://david-dm.org/)
 [![Known Vulnerabilities](https://snyk.io/test/github/ReactMaker/simple_react_startkit/badge.svg?targetFile=package.json)](https://snyk.io/test/github/ReactMaker/simple_react_startkit?targetFile=package.json)
 
-# Simple React Start Kit 2017
+# Simple React Start Kit 2.0
 
 這個環境包可以讓你快速體驗 ReactJS 開發環境的便利，我們並沒有在裏面放入額外的套件(例如 redux, karma)，希望可以讓你用最簡單的環境開始學習 React
 
 ## 特色
 
-* [react 16.3.1](https://github.com/facebook/react)
+* [react 16.4.2](https://github.com/facebook/react)
 * [webpack 4](https://github.com/webpack/webpack)
-* [babel 6](https://github.com/babel/babel)
+* [babel 7](https://github.com/babel/babel)
 * [eslint](http://eslint.org)
 
 ## 需求配置
