@@ -1,7 +1,7 @@
 {
   "name": "simple_react_start_kit_2017",
   "description": "react webpack2 react-router example",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "main": "src/index.js",
   "scripts": {
     "clean": "rimraf dist/*",
@@ -21,6 +21,8 @@
     "react-dom": "16.4.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
     "autoprefixer": "9.1.3",
     "babel-core": "6.26.3",
     "babel-eslint": "9.0.0",
