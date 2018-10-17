@@ -59,7 +59,16 @@ module.exports = {
   },
   optimization: {
     splitChunks: {
-      chunks: 'all'
+      chunks: 'all',
+      cacheGroups: {
+        default: false,
+        commons: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'node_modules',
+          chunks: 'all',
+          minChunks: 2
+        }
+      }
     }
   },
   plugins: [
