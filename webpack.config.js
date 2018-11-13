@@ -23,7 +23,12 @@ module.exports = {
           'style-loader',
           'css-loader',
           'postcss-loader',
-          'less-loader'
+          {
+            loader: "less-loader",
+            options: {
+                javascriptEnabled: true
+            }
+          }
         ]
       },
       {
