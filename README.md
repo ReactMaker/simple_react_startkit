@@ -9,7 +9,7 @@
 
 ## 特色
 
-* [react 16.4.2](https://github.com/facebook/react)
+* [react 16.6](https://github.com/facebook/react)
 * [webpack 4](https://github.com/webpack/webpack)
 * [babel 7](https://github.com/babel/babel)
 * [eslint](http://eslint.org)
