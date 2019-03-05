@@ -17,8 +17,8 @@
   "license": "ISC",
   "private": true,
   "dependencies": {
-    "react": "16.8.3",
-    "react-dom": "16.8.3"
+    "react": "16.8.4",
+    "react-dom": "16.8.4"
   },
   "devDependencies": {
     "@babel/core": "7.3.4",
