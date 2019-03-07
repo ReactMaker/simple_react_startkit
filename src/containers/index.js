@@ -1,22 +1,16 @@
-import React, { Component } from 'react';
-import { hot } from 'react-hot-loader';
+import React, { useEffect } from 'react';
+import { hot } from 'react-hot-loader/root';
 
-export default
-@hot(module)
-class Main extends Component {
-  // this is test function, please remove it before develop.
-  async componentDidMount() {
-    const a = await Promise.resolve({ react: 1, maker: 2 });
-    const b = { ...a };
-    console.log(b);
-  }
+const Main = () => {
+  useEffect(() => {
+    console.log('componentDidMount');
+  });
+  return (
+    <div style={{ textAlign: 'center' }}>
+      <h2>Hello, I`m ReactMaker.</h2>
+      <p>To get started, edit containers/index.js</p>
+    </div>
+  );
+};
 
-  render() {
-    return (
-      <div style={{ textAlign: 'center' }}>
-        <h2>Hello, I`m ReactMaker.</h2>
-        <p>To get started, edit containers/index.js</p>
-      </div>
-    );
-  }
-}
+export default hot(Main);
