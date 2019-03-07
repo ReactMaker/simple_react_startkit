@@ -3,22 +3,24 @@
 [![david-dm](https://david-dm.org/reactmaker/simple_react_startkit.svg)](https://david-dm.org/)
 [![Known Vulnerabilities](https://snyk.io/test/github/ReactMaker/simple_react_startkit/badge.svg?targetFile=package.json)](https://snyk.io/test/github/ReactMaker/simple_react_startkit?targetFile=package.json)
 
-# Simple React Start Kit 2.0
+# Simple React Startkit
 
-這個環境包可以讓你快速體驗 ReactJS 開發環境的便利，我們並沒有在裏面放入額外的套件(例如 redux, karma)，希望可以讓你用最簡單的環境開始學習 React
+This is a simple react boilerplate, without complex dependencies(eg. redux or router), this project can help you start the react project in seconds.
 
-## 特色
+這個環境包可以讓你快速體驗 ReactJS 開發環境的便利，我們並沒有在裏面放入額外的套件(例如 redux, router)，希望可以讓你用最簡單的環境開始學習 React
 
-* [react 16.6](https://github.com/facebook/react)
+## 特色 feature
+
+* [react 16.8](https://github.com/facebook/react)
 * [webpack 4](https://github.com/webpack/webpack)
 * [babel 7](https://github.com/babel/babel)
 * [eslint](http://eslint.org)
 
-## 需求配置
+## 需求配置 requirement
 * node `^6.11.5`
 * npm `^3.10.10`
 
-## 開始
+## 開始 getting start
 
 先確定好安裝了 node 6.11.5 以上的版本，接著就可以輸入以下指令
 
