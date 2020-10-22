@@ -17,8 +17,8 @@
   "license": "ISC",
   "private": true,
   "dependencies": {
-    "react": "17.0.0",
-    "react-dom": "17.0.0"
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
   },
   "devDependencies": {
     "@babel/core": "7.12.3",
