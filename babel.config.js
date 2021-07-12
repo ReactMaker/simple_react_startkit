@@ -5,6 +5,5 @@ module.exports = {
   ],
   plugins: [
     "@babel/plugin-transform-runtime",
-    "react-hot-loader/babel"
   ]
 };
