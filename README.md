@@ -11,8 +11,8 @@ This is a simple react boilerplate, without complex dependencies(eg. redux or ro
 
 ## 特色 feature
 
-* [react 16.8](https://github.com/facebook/react)
-* [webpack 4](https://github.com/webpack/webpack)
+* [react 17](https://github.com/facebook/react)
+* [webpack 5](https://github.com/webpack/webpack)
 * [babel 7](https://github.com/babel/babel)
 * [eslint](http://eslint.org)
 
