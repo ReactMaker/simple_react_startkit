@@ -41,7 +41,7 @@
     "eslint-plugin-react": "7.26.1",
     "file-loader": "6.2.0",
     "gh-pages": "3.2.3",
-    "html-webpack-plugin": "5.3.1",
+    "html-webpack-plugin": "5.4.0",
     "less": "4.1.2",
     "less-loader": "10.1.0",
     "node-sass": "6.0.1",
