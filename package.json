@@ -44,7 +44,7 @@
     "html-webpack-plugin": "5.5.0",
     "less": "4.1.2",
     "less-loader": "10.2.0",
-    "node-sass": "6.0.1",
+    "node-sass": "7.0.0",
     "postcss-loader": "6.2.1",
     "rimraf": "3.0.2",
     "sass-loader": "12.4.0",
