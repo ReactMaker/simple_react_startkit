@@ -38,7 +38,7 @@
     "eslint-config-airbnb": "19.0.4",
     "eslint-plugin-import": "2.25.4",
     "eslint-plugin-jsx-a11y": "6.5.1",
-    "eslint-plugin-react": "7.29.3",
+    "eslint-plugin-react": "7.29.4",
     "file-loader": "6.2.0",
     "gh-pages": "3.2.3",
     "html-webpack-plugin": "5.5.0",
