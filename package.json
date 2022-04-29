@@ -21,12 +21,12 @@
     "react-dom": "18.1.0"
   },
   "devDependencies": {
-    "@babel/core": "7.17.9",
+    "@babel/core": "7.17.10",
     "@babel/plugin-proposal-class-properties": "7.16.7",
     "@babel/plugin-proposal-decorators": "7.17.9",
-    "@babel/plugin-transform-runtime": "7.17.0",
+    "@babel/plugin-transform-runtime": "7.17.10",
     "@babel/polyfill": "7.12.1",
-    "@babel/preset-env": "7.16.11",
+    "@babel/preset-env": "7.17.10",
     "@babel/preset-react": "7.16.7",
     "@babel/runtime": "7.17.9",
     "autoprefixer": "10.4.5",
