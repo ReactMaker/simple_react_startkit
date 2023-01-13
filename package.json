@@ -46,7 +46,7 @@
     "less-loader": "11.1.0",
     "node-sass": "8.0.0",
     "postcss-loader": "7.0.2",
-    "rimraf": "3.0.2",
+    "rimraf": "4.0.4",
     "sass-loader": "13.2.0",
     "style-loader": "3.3.1",
     "webpack": "5.75.0",
