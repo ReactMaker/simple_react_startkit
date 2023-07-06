@@ -32,7 +32,7 @@
     "autoprefixer": "10.4.14",
     "@babel/eslint-parser": "7.22.6",
     "babel-loader": "9.1.2",
-    "core-js": "3.31.0",
+    "core-js": "3.31.1",
     "css-loader": "6.8.1",
     "eslint": "8.44.0",
     "eslint-config-airbnb": "19.0.4",
