@@ -42,7 +42,7 @@
     "file-loader": "6.2.0",
     "gh-pages": "5.0.0",
     "html-webpack-plugin": "5.5.3",
-    "less": "4.1.3",
+    "less": "4.2.0",
     "less-loader": "11.1.3",
     "node-sass": "9.0.0",
     "postcss-loader": "7.3.3",
