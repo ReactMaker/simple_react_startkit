@@ -29,7 +29,7 @@
     "@babel/preset-env": "7.29.0",
     "@babel/preset-react": "7.28.5",
     "@babel/runtime": "7.28.6",
-    "autoprefixer": "10.4.24",
+    "autoprefixer": "10.4.27",
     "@babel/eslint-parser": "7.28.6",
     "babel-loader": "10.0.0",
     "core-js": "3.48.0",
